@@ -151,24 +151,37 @@ namespace Gatito
                 YaHayGanador = true;
             }
 
-            //Validar cuando sea empate
-            //else
-            //bool Empate =true;
-            //for(var i=0; i< TamanioGato; i++)
-            //{ 
-            //for(var j=0; j< TamanioGato; j++)
-            //{
-            // if()
-            //Empate = false;
-            //}
+            else
+            {
 
-            //}
-            //if (Empate)
-            //{
-            //    MessageBox.Show("Esto es un empate ¡Reinicia el juego!");
-            //    IniciarJuego();
-            //}
+                bool Empate = true;
 
+                for (var i=0; i<TamanioGato; i++)
+                {
+                    for(var j=0; j<TamanioGato; j++)
+                    {
+                        if (Gato[i,j]==0)
+                        {
+                            Empate = false;
+                        }
+                        else
+                        {
+                            Empate = true;
+                        }
+                    }
+
+                }
+
+                if (Empate == true)
+                {
+                    MessageBox.Show("Esto es un empate, reiniciar juego");
+                    IniciarJuego();
+                }
+
+            }
+
+            
+            
             if (YaHayGanador)
             {
                 MessageBox.Show("Ya hay ganador");
@@ -186,6 +199,10 @@ namespace Gatito
             }
         }
 
+        private void FichasGato_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

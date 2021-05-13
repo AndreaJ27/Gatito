@@ -38,6 +38,7 @@
             this.LBLp1 = new System.Windows.Forms.Label();
             this.LBLp2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PicInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -46,7 +47,8 @@
             // 
             // FichasGato
             // 
-            this.FichasGato.BackColor = System.Drawing.Color.Black;
+            this.FichasGato.BackColor = System.Drawing.Color.Transparent;
+            this.FichasGato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.FichasGato.ColumnCount = 3;
             this.FichasGato.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.FichasGato.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -59,11 +61,13 @@
             this.FichasGato.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.FichasGato.Size = new System.Drawing.Size(419, 307);
             this.FichasGato.TabIndex = 0;
+            this.FichasGato.Paint += new System.Windows.Forms.PaintEventHandler(this.FichasGato_Paint);
             // 
             // PicInicio
             // 
             this.PicInicio.BackColor = System.Drawing.Color.Transparent;
             this.PicInicio.ErrorImage = null;
+            this.PicInicio.Image = global::Gatito.Properties.Resources.Carrot;
             this.PicInicio.Location = new System.Drawing.Point(356, 388);
             this.PicInicio.Name = "PicInicio";
             this.PicInicio.Size = new System.Drawing.Size(100, 50);
@@ -75,6 +79,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Gatito.Properties.Resources.f_1;
             this.pictureBox2.Location = new System.Drawing.Point(504, 22);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(97, 105);
@@ -85,6 +90,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::Gatito.Properties.Resources.f_2;
             this.pictureBox3.Location = new System.Drawing.Point(655, 22);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(97, 105);
@@ -106,6 +112,7 @@
             // PicGanador
             // 
             this.PicGanador.BackColor = System.Drawing.Color.Transparent;
+            this.PicGanador.Image = global::Gatito.Properties.Resources.Sunflower;
             this.PicGanador.Location = new System.Drawing.Point(647, 182);
             this.PicGanador.Name = "PicGanador";
             this.PicGanador.Size = new System.Drawing.Size(144, 136);
@@ -144,6 +151,17 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "GANADOR";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("New Wild Words", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(341, 434);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Reiniciar Juego";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,7 +169,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BackgroundImage = global::Gatito.Properties.Resources.tumblr_oh73mokS1a1v6jzs4o1_1280;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(803, 450);
+            this.ClientSize = new System.Drawing.Size(803, 460);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.LBLp2);
             this.Controls.Add(this.LBLp1);
@@ -185,6 +204,7 @@
         private System.Windows.Forms.Label LBLp1;
         private System.Windows.Forms.Label LBLp2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
     }
 }
 
