@@ -64,7 +64,6 @@
             // 
             this.PicInicio.BackColor = System.Drawing.Color.Transparent;
             this.PicInicio.ErrorImage = null;
-            this.PicInicio.Image = global::Gatito.Properties.Resources.Carrot;
             this.PicInicio.Location = new System.Drawing.Point(356, 388);
             this.PicInicio.Name = "PicInicio";
             this.PicInicio.Size = new System.Drawing.Size(100, 50);
@@ -76,7 +75,6 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Gatito.Properties.Resources.unnamed;
             this.pictureBox2.Location = new System.Drawing.Point(504, 22);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(97, 105);
@@ -87,7 +85,6 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Gatito.Properties.Resources.Fox;
             this.pictureBox3.Location = new System.Drawing.Point(655, 22);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(97, 105);
@@ -109,7 +106,6 @@
             // PicGanador
             // 
             this.PicGanador.BackColor = System.Drawing.Color.Transparent;
-            this.PicGanador.Image = global::Gatito.Properties.Resources.Sunflower;
             this.PicGanador.Location = new System.Drawing.Point(647, 182);
             this.PicGanador.Name = "PicGanador";
             this.PicGanador.Size = new System.Drawing.Size(144, 136);
